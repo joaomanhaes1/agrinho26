@@ -75,14 +75,14 @@ header {
   width: 100%;
 }
 
-.o-que-e h1 {
+.o-que-ec h1 {
   color: var(--coruniversal);
   font-family: "Abril Fatface", sans-serif;
 }
 
-.o-que-e h3 {
-  color: var(--coruniversal);
-  font-family: "Poppins", sans-serif;
+.o-que-eh3 {
+    text-align: center;
+    color: var(--texto);
 }
 
 
@@ -144,9 +144,7 @@ header {
   width: 95%;
   height: auto;
 }
-.meu-texto {
-    text-align: center;
-}
+
 
 /* =========================================================================== */
 h1 {

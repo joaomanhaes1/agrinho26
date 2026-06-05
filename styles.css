@@ -29,7 +29,7 @@ header {
 .botoes-top {
     display: flex;
     gap: 15px; 
-    font-family: "Poppins";
+    
 }
 
 .botoes-top button {
@@ -41,6 +41,7 @@ header {
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
+    font-family: "Poppins";
 }
 
 .botoes-top button:hover {

@@ -153,6 +153,10 @@ p {
   justify-content: center;
   min-height: 320px;
 }
+
+.destaque h3 {
+  color: white;
+}
  
 .destaque-conteudo {
   position: relative;

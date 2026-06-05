@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroForte 2026 — Agricultura Regenerativa</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">🌿 AgroForte</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Início</a></li>
+      <li><a href="#sobre">O Que É</a></li>
+      <li><a href="#praticas">Práticas</a></li>
+      <li><a href="#calculadora">Calculadora</a></li>
+      <li><a href="#quiz">Quiz</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb orb1"></div>
+      <div class="hero-orb orb2"></div>
+      <div class="hero-orb orb3"></div>
+      <div class="particles" id="particles"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-badge">Agrinho 2026</span>
+      <h1 class="hero-title">
+        Agricultura<br/>
+        <em>Regenerativa</em>
+      </h1>
+      <p class="hero-subtitle">
+        Futuro Sustentável: equilíbrio entre produção e meio ambiente.<br/>
+        Descubra como cultivar a terra <strong>sem destruí-la</strong>.
+      </p>
+      <div class="hero-buttons">
+        <a href="#sobre" class="btn btn-primary">Explorar</a>
+        <a href="#quiz" class="btn btn-outline">Fazer o Quiz</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Role para baixo</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">O que é?</span>
+        <h2>Agricultura Regenerativa</h2>
+        <p>Muito mais do que não destruir — é sobre <em>reconstruir</em> o que foi perdido.</p>
+      </div>
+      <div class="sobre-grid">
+        <div class="sobre-card" data-delay="0">
+          <div class="card-icon">🌱</div>
+          <h3>Regenera o Solo</h3>
+          <p>Ao invés de esgotar os nutrientes, as práticas regenerativas devolvem matéria orgânica, aumentando a fertilidade natural da terra ao longo do tempo.</p>
+        </div>
+        <div class="sobre-card" data-delay="100">
+          <div class="card-icon">💧</div>
+          <h3>Protege a Água</h3>
+          <p>Solos saudáveis absorvem e retêm mais água, reduzindo erosão, enchentes e o consumo de irrigação nas lavouras.</p>
+        </div>
+        <div class="sobre-card" data-delay="200">
+          <div class="card-icon">🌍</div>
+          <h3>Captura Carbono</h3>
+          <p>Plantas e solo bem manejados sequestram CO₂ da atmosfera, tornando a fazenda parte da solução para as mudanças climáticas.</p>
+        </div>
+        <div class="sobre-card" data-delay="300">
+          <div class="card-icon">🦋</div>
+          <h3>Aumenta Biodiversidade</h3>
+          <p>Ao reduzir agrotóxicos e diversificar culturas, a vida retorna: insetos, aves, fungos benéficos e microrganismos essenciais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRÁTICAS -->
+  <section class="praticas" id="praticas">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag">Como funciona</span>
+        <h2>Práticas Regenerativas</h2>
+        <p>Técnicas que produtores do Paraná já estão adotando.</p>
+      </div>
+      <div class="praticas-timeline">
+
+        <div class="timeline-item left">
+          <div class="timeline-dot">01</div>
+          <div class="timeline-card">
+            <h3>🌾 Plantio Direto</h3>
+            <p>O solo não é arado, preservando sua estrutura, organismos vivos e a matéria orgânica acumulada. Reduz erosão em até 90%.</p>
+            <div class="timeline-tag">Solo</div>
+          </div>
+        </div>
+
+        <div class="timeline-item right">
+          <div class="timeline-dot">02</div>
+          <div class="timeline-card">
+            <h3>🪱 Compostagem</h3>
+            <p>Resíduos orgânicos viram adubo natural rico em nutrientes, eliminando a necessidade de fertilizantes químicos e reduzindo custos.</p>
+            <div class="timeline-tag">Nutrição</div>
+          </div>
+        </div>
+
+        <div class="timeline-item left">
+          <div class="timeline-dot">03</div>
+          <div class="timeline-card">
+            <h3>🌿 Cobertura Vegetal</h3>
+            <p>Plantas de cobertura como braquiária e crotalária protegem o solo entre safras, mantendo umidade e fixando nitrogênio.</p>
+            <div class="timeline-tag">Proteção</div>
+          </div>
+        </div>
+
+        <div class="timeline-item right">
+          <div class="timeline-dot">04</div>
+          <div class="timeline-card">
+            <h3>🐄 Integração Lavoura-Pecuária</h3>
+            <p>Animais e culturas no mesmo espaço de forma planejada. O gado fertiliza o solo, enquanto as plantas oferecem pastagem.</p>
+            <div class="timeline-tag">Integração</div>
+          </div>
+        </div>
+
+        <div class="timeline-item left">
+          <div class="timeline-dot">05</div>
+          <div class="timeline-card">
+            <h3>🌳 Agrofloresta</h3>
+            <p>Árvores plantadas junto às culturas criam sombra, melhoram o microclima, atraem polinizadores e geram renda extra com madeira ou frutas.</p>
+            <div class="timeline-tag">Floresta</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CALCULADORA -->
+  <section class="calculadora" id="calculadora">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Ferramenta</span>
+        <h2>Calculadora de Carbono</h2>
+        <p>Descubra o impacto ambiental da sua propriedade rural.</p>
+      </div>
+      <div class="calc-wrapper">
+        <div class="calc-form">
+          <div class="form-group">
+            <label for="area">Tamanho da propriedade (hectares)</label>
+            <input type="number" id="area" placeholder="Ex: 10" min="1" max="10000" />
+          </div>
+          <div class="form-group">
+            <label>Práticas adotadas:</label>
+            <div class="checkbox-group">
+              <label class="checkbox-item">
+                <input type="checkbox" id="plantio" value="2.5" />
+                <span class="checkmark"></span>
+                🌾 Plantio Direto
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" id="compostagem" value="1.8" />
+                <span class="checkmark"></span>
+                🪱 Compostagem
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" id="cobertura" value="1.5" />
+                <span class="checkmark"></span>
+                🌿 Cobertura Vegetal
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" id="agrofloresta" value="4.2" />
+                <span class="checkmark"></span>
+                🌳 Agrofloresta
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" id="integracao" value="2.1" />
+                <span class="checkmark"></span>
+                🐄 Integração Lavoura-Pecuária
+              </label>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-full" id="calcBtn">Calcular Impacto 🌿</button>
+        </div>
+
+        <div class="calc-resultado" id="resultado" style="display:none">
+          <h3>🌍 Seu Impacto Ambiental</h3>
+          <div class="resultado-grid">
+            <div class="resultado-item">
+              <span class="resultado-num" id="co2Num">0</span>
+              <span class="resultado-label">ton CO₂/ano sequestrado</span>
+            </div>
+            <div class="resultado-item">
+              <span class="resultado-num" id="arvNum">0</span>
+              <span class="resultado-label">árvores equivalentes</span>
+            </div>
+            <div class="resultado-item">
+              <span class="resultado-num" id="aguaNum">0</span>
+              <span class="resultado-label">mil litros água economizados</span>
+            </div>
+          </div>
+          <div class="resultado-msg" id="resultadoMsg"></div>
+          <button class="btn btn-outline btn-sm" id="resetBtn">Recalcular</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="quiz-section" id="quiz">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag">Teste seus conhecimentos</span>
+        <h2>Quiz Regenerativo</h2>
+        <p>8 perguntas sobre Agricultura Regenerativa. Você é um Mestre da Terra?</p>
+      </div>
+
+      <div class="quiz-wrapper">
+        <!-- Tela inicial -->
+        <div class="quiz-start" id="quizStart">
+          <div class="quiz-start-icon">🌱</div>
+          <h3>Pronto para o desafio?</h3>
+          <p>8 perguntas sobre práticas sustentáveis, solo, água e clima. Veja qual título você conquista!</p>
+          <div class="quiz-titulos">
+            <span>🌱 Semente Curiosa</span>
+            <span>🌿 Guardião do Solo</span>
+            <span>🌳 Mestre da Terra</span>
+          </div>
+          <button class="btn btn-primary" id="startQuizBtn">Começar Quiz!</button>
+        </div>
+
+        <!-- Perguntas -->
+        <div class="quiz-pergunta" id="quizPergunta" style="display:none">
+          <div class="quiz-progress">
+            <div class="progress-bar">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <span class="progress-text" id="progressText">1 / 8</span>
+          </div>
+          <div class="quiz-score-live">
+            ⭐ <span id="scoreLive">0</span> pontos
+          </div>
+          <h3 class="quiz-q" id="quizQ"></h3>
+          <div class="quiz-options" id="quizOptions"></div>
+          <div class="quiz-feedback" id="quizFeedback" style="display:none"></div>
+          <button class="btn btn-primary" id="nextBtn" style="display:none">Próxima →</button>
+        </div>
+
+        <!-- Resultado final -->
+        <div class="quiz-resultado" id="quizResultado" style="display:none">
+          <div class="resultado-emoji" id="resultEmoji"></div>
+          <h3 id="resultTitulo"></h3>
+          <p class="result-score">Você acertou <strong id="resultAcertos"></strong> de 8 perguntas</p>
+          <p class="result-pontos">Total: <strong id="resultPontos"></strong> pontos</p>
+          <p class="result-msg" id="resultMsg"></p>
+          <div class="result-stars" id="resultStars"></div>
+          <button class="btn btn-primary" id="refazerBtn">Refazer Quiz 🔄</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-logo">🌿 AgroForte 2026</span>
+          <p>Projeto desenvolvido para o Concurso Agrinho 2026.<br/>Tema: Futuro Sustentável.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navegação</h4>
+          <a href="#sobre">O Que É</a>
+          <a href="#praticas">Práticas</a>
+          <a href="#calculadora">Calculadora</a>
+          <a href="#quiz">Quiz</a>
+        </div>
+        <div class="footer-info">
+          <h4>Sobre o Projeto</h4>
+          <p>Agricultura Regenerativa é o caminho para produzir alimentos respeitando os limites do planeta.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 AgroForte — Agrinho Paraná 🌾</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

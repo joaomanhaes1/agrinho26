@@ -189,7 +189,7 @@ p {
 .destaque-conteudo {
   position: relative;
   z-index: 2;
-  max-width: 600px;
+  max-width: 830px;
   justify-content: center;
   text-align: center;
 }

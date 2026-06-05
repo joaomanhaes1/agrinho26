@@ -32,7 +32,7 @@ header {
     
 }
 
-.botoes-top btn-nav {
+.botoes-top .btn-nav {
     background-color: #369b3b; 
     stroke: #17772f;
     color: white;

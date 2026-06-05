@@ -10,15 +10,15 @@ body {
 :root {
   --radius: 16px;
   --texto: #1a1a1a;
-  --coruniversal: rgb(0, 119, 255);
+  --coruniversal: rgb(34, 163, 51);
 }
 
 /* top bar ali de cima */
 header {
-    border-bottom: solid 2px rgb(0, 4, 255);
+    border-bottom: solid 2px rgb(5, 146, 68);
     padding: 20px;
     font-size: 32px;
-    color: rgb(0, 4, 255);
+    color: rgb(5, 146, 68);
 }
 
 /* código pra ajeitar as imagens do info dos projetos */

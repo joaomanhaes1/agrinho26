@@ -29,7 +29,12 @@ header {
     padding: 15px 30px;             /* Dá um espaçamento interno nas laterais e cima/baixo */
     background-color: #ffffff;      /* Cor de fundo da sua barra (mude se quiser) */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: fixed;
+    position: fixed;   /* Fixa o elemento na tela */
+    top: 0;            /* Cola a barra exatamente no topo */
+    left: 0;           /* Alinha na extrema esquerda */
+    width: 100%;       /* Garante que ela ocupe toda a largura da tela */
+    z-index: 1000;     /* Faz a barra ficar "na frente" de todos os outros elementos do site */
+    box-sizing: border-box;
 }
 
 .botoes-top {

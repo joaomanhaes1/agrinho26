@@ -1,298 +1,200 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AgroForte 2026 — Agricultura Regenerativa</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href= "https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" rel="stylesheet" rel="stylesheet">
+        <title>Diário de Robótica</title>
+        <link rel="icon" href="logodiario.png" type="image/png">
 </head>
 <body>
+    <header>
+        <div class="logo-container">
+            <img src="logodiario.png" alt="Logo" class="logo">
+            <h1 class="nome-site">Diário de Robótica</h1>
+        </div>
 
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-logo">🌿 AgroForte</div>
-    <ul class="nav-links">
-      <li><a href="#hero">Início</a></li>
-      <li><a href="#sobre">O Que É</a></li>
-      <li><a href="#praticas">Práticas</a></li>
-      <li><a href="#calculadora">Calculadora</a></li>
-      <li><a href="#quiz">Quiz</a></li>
-    </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
-  </nav>
+    </header>
 
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="hero-bg">
-      <div class="hero-orb orb1"></div>
-      <div class="hero-orb orb2"></div>
-      <div class="hero-orb orb3"></div>
-      <div class="particles" id="particles"></div>
-    </div>
-    <div class="hero-content">
-      <span class="hero-badge">Agrinho 2026</span>
-      <h1 class="hero-title">
-        Agricultura<br/>
-        <em>Regenerativa</em>
-      </h1>
-      <p class="hero-subtitle">
-        Futuro Sustentável: equilíbrio entre produção e meio ambiente.<br/>
-        Descubra como cultivar a terra <strong>sem destruí-la</strong>.
-      </p>
-      <div class="hero-buttons">
-        <a href="#sobre" class="btn btn-primary">Explorar</a>
-        <a href="#quiz" class="btn btn-outline">Fazer o Quiz</a>
-      </div>
-    </div>
-    <div class="hero-scroll">
-      <span>Role para baixo</span>
-      <div class="scroll-arrow"></div>
+    <section class="destaque">
+    <div class="destaque-conteudo">
+      <h1> ✦ DIÁRIO DE ROBOTICA </h1>
     </div>
   </section>
 
-  <!-- SOBRE -->
-  <section class="sobre" id="sobre">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">O que é?</span>
-        <h2>Agricultura Regenerativa</h2>
-        <p>Muito mais do que não destruir — é sobre <em>reconstruir</em> o que foi perdido.</p>
-      </div>
-      <div class="sobre-grid">
-        <div class="sobre-card" data-delay="0">
-          <div class="card-icon">🌱</div>
-          <h3>Regenera o Solo</h3>
-          <p>Ao invés de esgotar os nutrientes, as práticas regenerativas devolvem matéria orgânica, aumentando a fertilidade natural da terra ao longo do tempo.</p>
+    <section class="textos">
+    <br>
+<!-- Separação das grids pra colocar os benefícios e malefícios-->
+    <div class="grid-projetos">
+        <div class="card">
+        <h3>Projeto 1: Testes com Sensor para cadeira de rodas </h3>
+        <p>Nos testes com a cadeira de rodas, o sensor ultrassônico HC-SR04, conectado ao Arduino com protoboard e jumpers MM, conseguiu medir distâncias e detectar obstáculos com boa resposta. Foram observadas leituras rápidas e relativamente precisas, mas com pequenas variações e menor eficiência em algumas superfícies. Ainda assim, o sistema se mostrou útil para auxiliar na segurança do usuário.</p>
+        <img src= "fotoIA1.png" class="fotodaia">
+  </div>
+        <div class="card">
+            <h3>Projeto 2: Semáforo inteligente com Sensor IR</h3>
+            <p>No trabalho de robótica, desenvolvemos um semáforo com LED's e um sensor infravermelho (IR) que detecta presença. A ideia era simples: enquanto o sensor não identifica nada à frente, o semáforo fica no verde, aceso para os carros. Assim que detecta algo, ele faz a transição para o amarelo e depois para o vermelho para os carros e, para os pedestres, o sinal verde é aceso. Foi um projeto bem interessante porque conseguimos unir um elemento do cotidiano e programação de forma prática, vendo na vida real como sensores e LED's funcionam juntos.</p>
+            <img src="fotoSemaforo.png" class="foto-semaforo">
         </div>
-        <div class="sobre-card" data-delay="100">
-          <div class="card-icon">💧</div>
-          <h3>Protege a Água</h3>
-          <p>Solos saudáveis absorvem e retêm mais água, reduzindo erosão, enchentes e o consumo de irrigação nas lavouras.</p>
-        </div>
-        <div class="sobre-card" data-delay="200">
-          <div class="card-icon">🌍</div>
-          <h3>Captura Carbono</h3>
-          <p>Plantas e solo bem manejados sequestram CO₂ da atmosfera, tornando a fazenda parte da solução para as mudanças climáticas.</p>
-        </div>
-        <div class="sobre-card" data-delay="300">
-          <div class="card-icon">🦋</div>
-          <h3>Aumenta Biodiversidade</h3>
-          <p>Ao reduzir agrotóxicos e diversificar culturas, a vida retorna: insetos, aves, fungos benéficos e microrganismos essenciais.</p>
-        </div>
-      </div>
+</div>
+<!--      ================================================================================================== -->
+<br>
+<hr>
+
+<h2 class="projeto33"> Projeto 3: Relato dos experimentos sobre movimentação: acessibilidade</h2>
+<h3 class="projeto3"> Neste relato, observamos a diferença de movimentação de pessoas com adversidades diversas, como a de um cadeirante e a de um cego. Executamos um curto percurso na sala com os olhos vendados, utilizando uma cadeira de rodas e percorrendo como uma pessoa normal. A tabela abaixo mostra a comparação.</h3>
+
+<table class="tabela-robotica">
+  <thead>
+    <tr>
+      <th>Modo</th>
+      <th>Distância</th>
+      <th>Tempo</th>
+      <th>Velocidade Média</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Normal</td>
+      <td>8.92m</td>
+      <td>10.16s</td>
+      <td>0,87 m/s</td>
+    </tr>
+    <tr>
+      <td>Olhos vendados (simulando uma pessoa cega)</td>
+      <td>8.92m</td>
+      <td>14.13s</td>
+      <td>0.63 m/s</td>
+    </tr>
+    <tr>
+      <td>Cadeira de Rodas (simulando cadeirante)</td>
+      <td>8.92m</td>
+      <td>18.61s</td>
+      <td>0,48 m/s</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<hr>
+
+<!-- PONTOS POSITIVOS E NEGATIVOS DO PROJETO DE ROBÓTICA COM IA-->
+<h2> Pontos positivos e negativos do projeto de robótica com IA </h2>
+<div class="grid-projetos">
+        <div class="card">
+        <h2>✅ Pontos Positivos</h2>
+        <p> 
+            • Rapidez no desenvolvimento: a IA consegue gerar ideias, códigos e esquemas muito mais rápido do que fazer tudo manualmente.
+            <br>
+            • Acesso ao conhecimento: você consegue usar conceitos avançados mesmo sem ser especialista em Robótica ou programação.
+            <br>
+            • Otimização de soluções: a IA pode sugerir melhorias, corrigir erros e até prever problemas no projeto.
+            <br>
+            • Criatividade: ajuda a ter ideias diferentes, como novos tipos de sensores ou automações
+            <br>
+        </p>
+  </div>
+<div class="card">
+        <h2>❌ Pontos Negativos </h2>
+        <p> 
+            • Erros escondidos: a IA pode gerar códigos ou projetos com falhas que não são fáceis de perceber.
+            <br>
+            • Limitações práticas: a IA pode sugerir coisas difíceis de montar na vida real (componentes caros ou inexistentes).
+            <br>
+            • Falta de personalização real: nem sempre o projeto se adapta perfeitamente ao seu objetivo específico.
+            <br>
+            • Dependência excessiva: Quem usa IA sem entender o que está fazendo cria uma dependência que compromete a capacidade de manter, ajustar ou escalar o projeto futuramente.
+            <br>
+        </p>
     </div>
-  </section>
 
-  <!-- PRÁTICAS -->
-  <section class="praticas" id="praticas">
-    <div class="container">
-      <div class="section-header light">
-        <span class="section-tag">Como funciona</span>
-        <h2>Práticas Regenerativas</h2>
-        <p>Técnicas que produtores do Paraná já estão adotando.</p>
-      </div>
-      <div class="praticas-timeline">
+</div>
+<hr>
+<!-- DIAGRAMA APRENDIZADO DE MAQUINAS-->
+ <h2 class="meu-texto"> Esquema dos tipos de aprendizado de máquina</h2> 
+    <div class="imagem-diagrama">
+    <img src="esquema.png">
+</div>
+<hr>
 
-        <div class="timeline-item left">
-          <div class="timeline-dot">01</div>
-          <div class="timeline-card">
-            <h3>🌾 Plantio Direto</h3>
-            <p>O solo não é arado, preservando sua estrutura, organismos vivos e a matéria orgânica acumulada. Reduz erosão em até 90%.</p>
-            <div class="timeline-tag">Solo</div>
-          </div>
-        </div>
+<!-- BENEFÍCIOS E MALEFICIOS DAS 3 ÁREAS DO LIVRO ==========================================================================================--> 
+<div class="grid-projetos">
+        <div class="card">
+        <h2>🌱 Agricultura</h2>
+        <p>✅Benefícios 
+            <br>
+            • Avalia a saúde das plantas, detectando pragas e doenças.
+            <br>
+            • Sensores de monitoramento do solo fornecem dados analisados pelo algoritmo para indicar com precisão a necessidade de correções, como o uso de aditivos químicos em doses específicas.
+            <br>
+            • Permite irrigação adequada, evitando o uso excessivo de agrotóxicos e o desperdício de água.
+            <br>
+        </p>
+        <br> <!-- colocar hr talvez pra botar a linha-->
+        <p>❌ Malefícios
+            <br>
+            • A dependência de tecnologia cara pode excluir pequenos agricultores que não possuem condição financeira para adquirir tais equipamentos.
+            <br>
+            • Falhas nos algoritmos podem gerar diagnósticos equivocados e provocar prejuízo na lavoura.
+            <br>
+            • O uso intensivo de tecnologia no campo aumenta a dependência de empresas de tecnologia estrangeiras, assim, os agricultores são suscetíveis a variações de preço e descontinuidade de serviços.
+            <br>
+        </p>
+  </div>
+          <div class="card">
+        <h2>🛡️ Segurança e Defesa</h2>
+        <p>✅Benefícios
+            <br>
+            • Sistemas de reconhecimento facial avançados para encontrar pessoas procuradas.
+            <br>
+            • Os sistemas conseguem analisar grandes quantidades de dados em tempo real.
+            <br>
+            • Sistemas podem ajudar na identificação e neutralização de ameaças cibernéticas.
+            <br>
+        </p>
+        <br> <!-- colocar hr talvez pra botar a linha-->
+        <p>❌ Malefícios
+            <br>
+            • O viés algorítmico do reconhecimento facial pode fornecer dados incorretos.
+            <br>
+            • Sistemas de IA podem ser vulneráveis a ataques ou manipulação por pessoas mal-intencionadas, comprometendo a segurança nacional.
+            <br>
+            • Quando hackeados, os dados pessoais coletados pelas pessoas mal-intencionadas podem ser usados indevidamente.
+            <br>
+        </p>
+  </div>  
+  <div class="card">
+        <h2>🏛️ Serviços públicos e cidadania</h2>
+        <p>✅Benefícios 
+            <br>
+            • Auxiliam na gestão de resíduos.
+            <br>
+            • Reduz a quantidade de lixo enviado para aterros sanitários.
+            <br>
+            • Otimização do transporte público analisando o fluxo de pessoas e tráfego para reduzir filas e evitar atrasos.
+            <br>
+        </p>
+        <br> <!-- colocar hr talvez pra botar a linha-->
+        <p>❌ Malefícios
+            <br>
+            • Consome grande quantidade de energia.
+            <br>
+            • Desemprego em função dos sistemas de IA substituírem o trabalho humano na gestão de resíduos e triagem.
+            <br>
+            • Falta de transparência nos algoritmos usados, dificultando os cidadãos a entenderem e constarem as decisões da IA.
+            <br>
+        </p>
+  </div>
+</div>
 
-        <div class="timeline-item right">
-          <div class="timeline-dot">02</div>
-          <div class="timeline-card">
-            <h3>🪱 Compostagem</h3>
-            <p>Resíduos orgânicos viram adubo natural rico em nutrientes, eliminando a necessidade de fertilizantes químicos e reduzindo custos.</p>
-            <div class="timeline-tag">Nutrição</div>
-          </div>
-        </div>
+<br>
+<hr>
 
-        <div class="timeline-item left">
-          <div class="timeline-dot">03</div>
-          <div class="timeline-card">
-            <h3>🌿 Cobertura Vegetal</h3>
-            <p>Plantas de cobertura como braquiária e crotalária protegem o solo entre safras, mantendo umidade e fixando nitrogênio.</p>
-            <div class="timeline-tag">Proteção</div>
-          </div>
-        </div>
 
-        <div class="timeline-item right">
-          <div class="timeline-dot">04</div>
-          <div class="timeline-card">
-            <h3>🐄 Integração Lavoura-Pecuária</h3>
-            <p>Animais e culturas no mesmo espaço de forma planejada. O gado fertiliza o solo, enquanto as plantas oferecem pastagem.</p>
-            <div class="timeline-tag">Integração</div>
-          </div>
-        </div>
 
-        <div class="timeline-item left">
-          <div class="timeline-dot">05</div>
-          <div class="timeline-card">
-            <h3>🌳 Agrofloresta</h3>
-            <p>Árvores plantadas junto às culturas criam sombra, melhoram o microclima, atraem polinizadores e geram renda extra com madeira ou frutas.</p>
-            <div class="timeline-tag">Floresta</div>
-          </div>
-        </div>
+<!-- ==========================================================================-->
 
-      </div>
-    </div>
-  </section>
-
-  <!-- CALCULADORA -->
-  <section class="calculadora" id="calculadora">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Ferramenta</span>
-        <h2>Calculadora de Carbono</h2>
-        <p>Descubra o impacto ambiental da sua propriedade rural.</p>
-      </div>
-      <div class="calc-wrapper">
-        <div class="calc-form">
-          <div class="form-group">
-            <label for="area">Tamanho da propriedade (hectares)</label>
-            <input type="number" id="area" placeholder="Ex: 10" min="1" max="10000" />
-          </div>
-          <div class="form-group">
-            <label>Práticas adotadas:</label>
-            <div class="checkbox-group">
-              <label class="checkbox-item">
-                <input type="checkbox" id="plantio" value="2.5" />
-                <span class="checkmark"></span>
-                🌾 Plantio Direto
-              </label>
-              <label class="checkbox-item">
-                <input type="checkbox" id="compostagem" value="1.8" />
-                <span class="checkmark"></span>
-                🪱 Compostagem
-              </label>
-              <label class="checkbox-item">
-                <input type="checkbox" id="cobertura" value="1.5" />
-                <span class="checkmark"></span>
-                🌿 Cobertura Vegetal
-              </label>
-              <label class="checkbox-item">
-                <input type="checkbox" id="agrofloresta" value="4.2" />
-                <span class="checkmark"></span>
-                🌳 Agrofloresta
-              </label>
-              <label class="checkbox-item">
-                <input type="checkbox" id="integracao" value="2.1" />
-                <span class="checkmark"></span>
-                🐄 Integração Lavoura-Pecuária
-              </label>
-            </div>
-          </div>
-          <button class="btn btn-primary btn-full" id="calcBtn">Calcular Impacto 🌿</button>
-        </div>
-
-        <div class="calc-resultado" id="resultado" style="display:none">
-          <h3>🌍 Seu Impacto Ambiental</h3>
-          <div class="resultado-grid">
-            <div class="resultado-item">
-              <span class="resultado-num" id="co2Num">0</span>
-              <span class="resultado-label">ton CO₂/ano sequestrado</span>
-            </div>
-            <div class="resultado-item">
-              <span class="resultado-num" id="arvNum">0</span>
-              <span class="resultado-label">árvores equivalentes</span>
-            </div>
-            <div class="resultado-item">
-              <span class="resultado-num" id="aguaNum">0</span>
-              <span class="resultado-label">mil litros água economizados</span>
-            </div>
-          </div>
-          <div class="resultado-msg" id="resultadoMsg"></div>
-          <button class="btn btn-outline btn-sm" id="resetBtn">Recalcular</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- QUIZ -->
-  <section class="quiz-section" id="quiz">
-    <div class="container">
-      <div class="section-header light">
-        <span class="section-tag">Teste seus conhecimentos</span>
-        <h2>Quiz Regenerativo</h2>
-        <p>8 perguntas sobre Agricultura Regenerativa. Você é um Mestre da Terra?</p>
-      </div>
-
-      <div class="quiz-wrapper">
-        <!-- Tela inicial -->
-        <div class="quiz-start" id="quizStart">
-          <div class="quiz-start-icon">🌱</div>
-          <h3>Pronto para o desafio?</h3>
-          <p>8 perguntas sobre práticas sustentáveis, solo, água e clima. Veja qual título você conquista!</p>
-          <div class="quiz-titulos">
-            <span>🌱 Semente Curiosa</span>
-            <span>🌿 Guardião do Solo</span>
-            <span>🌳 Mestre da Terra</span>
-          </div>
-          <button class="btn btn-primary" id="startQuizBtn">Começar Quiz!</button>
-        </div>
-
-        <!-- Perguntas -->
-        <div class="quiz-pergunta" id="quizPergunta" style="display:none">
-          <div class="quiz-progress">
-            <div class="progress-bar">
-              <div class="progress-fill" id="progressFill"></div>
-            </div>
-            <span class="progress-text" id="progressText">1 / 8</span>
-          </div>
-          <div class="quiz-score-live">
-            ⭐ <span id="scoreLive">0</span> pontos
-          </div>
-          <h3 class="quiz-q" id="quizQ"></h3>
-          <div class="quiz-options" id="quizOptions"></div>
-          <div class="quiz-feedback" id="quizFeedback" style="display:none"></div>
-          <button class="btn btn-primary" id="nextBtn" style="display:none">Próxima →</button>
-        </div>
-
-        <!-- Resultado final -->
-        <div class="quiz-resultado" id="quizResultado" style="display:none">
-          <div class="resultado-emoji" id="resultEmoji"></div>
-          <h3 id="resultTitulo"></h3>
-          <p class="result-score">Você acertou <strong id="resultAcertos"></strong> de 8 perguntas</p>
-          <p class="result-pontos">Total: <strong id="resultPontos"></strong> pontos</p>
-          <p class="result-msg" id="resultMsg"></p>
-          <div class="result-stars" id="resultStars"></div>
-          <button class="btn btn-primary" id="refazerBtn">Refazer Quiz 🔄</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <span class="footer-logo">🌿 AgroForte 2026</span>
-          <p>Projeto desenvolvido para o Concurso Agrinho 2026.<br/>Tema: Futuro Sustentável.</p>
-        </div>
-        <div class="footer-links">
-          <h4>Navegação</h4>
-          <a href="#sobre">O Que É</a>
-          <a href="#praticas">Práticas</a>
-          <a href="#calculadora">Calculadora</a>
-          <a href="#quiz">Quiz</a>
-        </div>
-        <div class="footer-info">
-          <h4>Sobre o Projeto</h4>
-          <p>Agricultura Regenerativa é o caminho para produzir alimentos respeitando os limites do planeta.</p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2026 AgroForte — Agrinho Paraná 🌾</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
+
 </html>

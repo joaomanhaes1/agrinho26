@@ -81,6 +81,13 @@ header {
   text-align: center;
 }
 
+.o-que-ec h6 {
+  color: var(--texto);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: normal;
+}
+
 .o-que-eh3 {
     text-align: center;
     color: var(--texto);
@@ -142,8 +149,9 @@ header {
 .imagem-diagrama {
   display: flex;
   justify-content: center;  /* centraliza na horizontal */
-  width: 95%;
+  width: 80%;
   height: auto;
+  border-radius: 10px 10px 10px 10px;
 }
 
 

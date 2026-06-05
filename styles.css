@@ -29,6 +29,7 @@ header {
 .botoes-top {
     display: flex;
     gap: 15px; 
+    font-family: "Poppins";
 }
 
 .botoes-top button {

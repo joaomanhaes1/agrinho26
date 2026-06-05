@@ -78,6 +78,7 @@ header {
 .o-que-ec h1 {
   color: var(--coruniversal);
   font-family: "Abril Fatface", sans-serif;
+  text-align: center;
 }
 
 .o-que-eh3 {

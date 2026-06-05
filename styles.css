@@ -6,6 +6,11 @@ body {
     margin-bottom: 100px;
 }
 
+html {
+    scroll-behavior: smooth;  /* rolagem suave -- por Gemini*/
+}
+
+
 /* definição de variáveis */
 :root {
   --radius: 16px;

@@ -16,10 +16,35 @@ body {
 /* top bar ali de cima */
 header {
     border-bottom: solid 2px rgb(5, 146, 68);
-    padding: 20px;
     font-size: 32px;
     color: rgb(5, 146, 68);
+    display: flex;
+    justify-content: space-between; /* Empurra a logo para a esquerda e o menu para a direita */
+    align-items: center;            /* Alinha a logo e os botões verticalmente no meio */
+    padding: 15px 30px;             /* Dá um espaçamento interno nas laterais e cima/baixo */
+    background-color: #ffffff;      /* Cor de fundo da sua barra (mude se quiser) */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+.botoes-top {
+    display: flex;
+    gap: 15px; 
+}
+
+.botoes-top button {
+    background-color: #2e7d32; 
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.botoes-top button:hover {
+    background-color: #1b5e20;
+}
+
 
 /* código pra ajeitar as imagens do info dos projetos */
 
@@ -200,12 +225,6 @@ p {
   width: 300px;
 }
 
-.botoes-top {
- display: flex;
-
-
-
-}
 
 
 

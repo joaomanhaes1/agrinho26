@@ -144,7 +144,7 @@ p {
 /* a pagina do destaque, o banner central */
 
 .destaque {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  background: linear-gradient(90deg,rgba(27, 61, 28, 1) 0%, rgba(80, 138, 100, 1) 50%, rgba(120, 199, 109, 1) 100%);
   padding: 80px 60px;
   position: relative;
   overflow: hidden;

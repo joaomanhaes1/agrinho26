@@ -196,10 +196,35 @@ p {
   width: 300px;
 }
 
+.nav-links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+}
+ 
+.nav-links a {
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: var(--trans);
+}
+ 
+.nav-links a:hover {
+  color: var(--verde-menta);
+}
+ 
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--branco);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+
 
 
 /* linhas alternadas pra ficar mais fácil de ler */
-
-
-
-/*   --sombra: 0 4px 24px rgba(0,0,0,0.08);

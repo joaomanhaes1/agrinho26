@@ -69,12 +69,6 @@ header {
 
 /* O que é do site*/
 
-.esq1 {
-  display: inline-block;
-  vertical-align: middle;
-  width: 100%;
-}
-
 .o-que-ec h1 {
   color: var(--coruniversal);
   font-family: "Abril Fatface", sans-serif;
@@ -100,10 +94,14 @@ header {
   justify-content: center;  /* centraliza na horizontal */
   width: 50%;
   height: 50%;
-  border-radius: 10px 10px 10px 10px;
   vertical-align: middle;
 }
 
+.esq1 {
+  display: flex;
+  vertical-align: middle;
+  border-radius: 10px 10px 10px 10px;
+}
 
 
 

@@ -32,6 +32,24 @@ header {
     
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* espaço entre logo e texto */
+}
+
+.logo {
+    height: 90px; /* ajuste o tamanho conforme necessário */
+    width: auto;
+}
+
+.nome-site {
+    margin: 0;
+    font-size: 30px;
+    color: #333;
+    font-family: "Abril Fatface", sans-serif;
+    }
+
 .botoes-top .btn-nav {
     background-color: #369b3b; 
     stroke: #17772f;
@@ -49,36 +67,26 @@ header {
     background-color: #135017;
 }
 
+/* O que é do site*/
 
-/* código pra ajeitar as imagens do info dos projetos */
-
-.fotodaia {
-  width: 90%;
-  height: 90%;
+.esq1 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
 }
 
-.foto-semaforo {
-  width: 50%;
-  height: 93%;
+.o-que-e h1 {
+  color: var(--coruniversal);
+  font-family: "Abril Fatface", sans-serif;
 }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 15px; /* espaço entre logo e texto */
+.o-que-e h3 {
+  color: var(--coruniversal);
+  font-family: "Poppins", sans-serif;
 }
 
-.logo {
-    height: 90px; /* ajuste o tamanho conforme necessário */
-    width: auto;
-}
 
-.nome-site {
-    margin: 0;
-    font-size: 30px;
-    color: #333;
-    font-family: "Abril Fatface", sans-serif;
-}
+
 
 
 /* Seções dos projetos */

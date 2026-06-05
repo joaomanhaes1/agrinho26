@@ -172,14 +172,14 @@ p {
 /* a pagina do destaque, o banner central */
 
 .destaque {
-  background: linear-gradient(90deg,rgba(27, 61, 28, 1) 0%, rgba(80, 138, 100, 1) 50%, rgba(120, 199, 109, 1) 100%);
+  background-image: url(midias/fundodestaque.png);
   padding: 80px 60px;
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 852px;
+  min-height: 630px;
 }
 
 .destaque h3 {

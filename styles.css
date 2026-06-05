@@ -81,6 +81,13 @@ header {
   text-align: center;
 }
 
+.o-que-eh3 {
+    text-align: center;
+    color: var(--texto);
+    font-weight: normal;
+
+}
+
 .o-que-ec h6 {
   color: var(--texto);
   font-family: "Poppins", sans-serif;
@@ -88,12 +95,15 @@ header {
   font-weight: normal;
 }
 
-.o-que-eh3 {
-    text-align: center;
-    color: var(--texto);
-    font-weight: normal;
+.imagem-diagrama {   /* código para a imagem do EOS */
+  display: flex;
+  justify-content: center;  /* centraliza na horizontal */
+  width: 50%;
+  height: 50%;
+  border-radius: 10px 10px 10px 10px;
+  vertical-align: middle;
+  align-items: center;
 }
-
 
 
 
@@ -147,14 +157,7 @@ header {
 
 /*==============================================================================*/
 /* código imagem do diagrama dos tipos de máquinas */
-.imagem-diagrama {
-  display: flex;
-  justify-content: center;  /* centraliza na horizontal */
-  width: 50%;
-  height: 50%;
-  border-radius: 10px 10px 10px 10px;
-  vertical-align: middle;
-}
+
 
 
 /* =========================================================================== */

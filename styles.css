@@ -91,6 +91,7 @@ header {
 .o-que-eh3 {
     text-align: center;
     color: var(--texto);
+    font-weight: normal;
 }
 
 
@@ -149,8 +150,8 @@ header {
 .imagem-diagrama {
   display: flex;
   justify-content: center;  /* centraliza na horizontal */
-  width: 80%;
-  height: auto;
+  width: 75%;
+  height: 75%;
   border-radius: 10px 10px 10px 10px;
 }
 

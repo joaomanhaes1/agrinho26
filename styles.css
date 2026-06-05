@@ -42,7 +42,6 @@ header {
     cursor: pointer;
     font-size: 14px;
     font-family: "Poppins";
-    display: inline-block;
     transition: background 0.3s ease;
 }
 

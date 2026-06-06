@@ -131,129 +131,42 @@
 </div>
 
 </section>
-
-
-
-
-
-
-
-
-
 <br>
 <hr>
 
-<!-- PONTOS POSITIVOS E NEGATIVOS DO PROJETO DE ROBÓTICA COM IA-->
-<h2> Pontos positivos e negativos do projeto de robótica com IA </h2>
-<div class="grid-projetos">
-        <div class="card">
-        <h2>✅ Pontos Positivos</h2>
-        <p> 
-            • Rapidez no desenvolvimento: a IA consegue gerar ideias, códigos e esquemas muito mais rápido do que fazer tudo manualmente.
-            <br>
-            • Acesso ao conhecimento: você consegue usar conceitos avançados mesmo sem ser especialista em Robótica ou programação.
-            <br>
-            • Otimização de soluções: a IA pode sugerir melhorias, corrigir erros e até prever problemas no projeto.
-            <br>
-            • Criatividade: ajuda a ter ideias diferentes, como novos tipos de sensores ou automações
-            <br>
-        </p>
-  </div>
-<div class="card">
-        <h2>❌ Pontos Negativos </h2>
-        <p> 
-            • Erros escondidos: a IA pode gerar códigos ou projetos com falhas que não são fáceis de perceber.
-            <br>
-            • Limitações práticas: a IA pode sugerir coisas difíceis de montar na vida real (componentes caros ou inexistentes).
-            <br>
-            • Falta de personalização real: nem sempre o projeto se adapta perfeitamente ao seu objetivo específico.
-            <br>
-            • Dependência excessiva: Quem usa IA sem entender o que está fazendo cria uma dependência que compromete a capacidade de manter, ajustar ou escalar o projeto futuramente.
-            <br>
-        </p>
+<!-- QUIZZ -->
+<div class="quiz-container">
+    <h3>Espaço AgroPlay: Desafio da Regeneração</h3>
+    <p>Teste seus conhecimentos sobre a agricultura do futuro e conquiste suas medalhas!</p>
+    
+    <div id="tela-inicial">
+        <button class="btn-quiz" onclick="iniciarQuiz()">Iniciar Desafio</button>
     </div>
 
-</div>
-<hr>
-<!-- DIAGRAMA APRENDIZADO DE MAQUINAS-->
- <h2 class="meu-texto"> Esquema dos tipos de aprendizado de máquina</h2> 
-    <div class="imagem-diagrama">
-    <img src="esquema.png">
-</div>
-<hr>
+    <div id="area-quiz" style="display: none;">
+        <div id="progresso-quiz"></div>
+        
+        <div id="pergunta-texto"></div>
+        
+        <div id="opcoes-resposta"></div>
+    </div>
 
-<!-- BENEFÍCIOS E MALEFICIOS DAS 3 ÁREAS DO LIVRO ==========================================================================================--> 
-<div class="grid-projetos">
-        <div class="card">
-        <h2>🌱 Agricultura</h2>
-        <p>✅Benefícios 
-            <br>
-            • Avalia a saúde das plantas, detectando pragas e doenças.
-            <br>
-            • Sensores de monitoramento do solo fornecem dados analisados pelo algoritmo para indicar com precisão a necessidade de correções, como o uso de aditivos químicos em doses específicas.
-            <br>
-            • Permite irrigação adequada, evitando o uso excessivo de agrotóxicos e o desperdício de água.
-            <br>
-        </p>
-        <br> <!-- colocar hr talvez pra botar a linha-->
-        <p>❌ Malefícios
-            <br>
-            • A dependência de tecnologia cara pode excluir pequenos agricultores que não possuem condição financeira para adquirir tais equipamentos.
-            <br>
-            • Falhas nos algoritmos podem gerar diagnósticos equivocados e provocar prejuízo na lavoura.
-            <br>
-            • O uso intensivo de tecnologia no campo aumenta a dependência de empresas de tecnologia estrangeiras, assim, os agricultores são suscetíveis a variações de preço e descontinuidade de serviços.
-            <br>
-        </p>
-  </div>
-          <div class="card">
-        <h2>🛡️ Segurança e Defesa</h2>
-        <p>✅Benefícios
-            <br>
-            • Sistemas de reconhecimento facial avançados para encontrar pessoas procuradas.
-            <br>
-            • Os sistemas conseguem analisar grandes quantidades de dados em tempo real.
-            <br>
-            • Sistemas podem ajudar na identificação e neutralização de ameaças cibernéticas.
-            <br>
-        </p>
-        <br> <!-- colocar hr talvez pra botar a linha-->
-        <p>❌ Malefícios
-            <br>
-            • O viés algorítmico do reconhecimento facial pode fornecer dados incorretos.
-            <br>
-            • Sistemas de IA podem ser vulneráveis a ataques ou manipulação por pessoas mal-intencionadas, comprometendo a segurança nacional.
-            <br>
-            • Quando hackeados, os dados pessoais coletados pelas pessoas mal-intencionadas podem ser usados indevidamente.
-            <br>
-        </p>
-  </div>  
-  <div class="card">
-        <h2>🏛️ Serviços públicos e cidadania</h2>
-        <p>✅Benefícios 
-            <br>
-            • Auxiliam na gestão de resíduos.
-            <br>
-            • Reduz a quantidade de lixo enviado para aterros sanitários.
-            <br>
-            • Otimização do transporte público analisando o fluxo de pessoas e tráfego para reduzir filas e evitar atrasos.
-            <br>
-        </p>
-        <br> <!-- colocar hr talvez pra botar a linha-->
-        <p>❌ Malefícios
-            <br>
-            • Consome grande quantidade de energia.
-            <br>
-            • Desemprego em função dos sistemas de IA substituírem o trabalho humano na gestão de resíduos e triagem.
-            <br>
-            • Falta de transparência nos algoritmos usados, dificultando os cidadãos a entenderem e constarem as decisões da IA.
-            <br>
-        </p>
-  </div>
+    <div id="tela-resultado" style="display: none;">
+        <h4>Desafio Concluído!</h4>
+        <p id="texto-pontuacao"></p>
+        
+        <div id="area-medalha"></div>
+        
+        <button class="btn-quiz" onclick="reiniciarQuiz()">Jogar Novamente</button>
+    </div>
 </div>
 
+
+
+<!-- /div-->
 <br>
 <hr>
+
 
 
 

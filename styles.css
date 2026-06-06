@@ -358,3 +358,115 @@ p {
         transform: translateY(0);    /* Termina na posição original */
     }
 }
+
+
+
+/* QUIZZ */
+/* Caixa principal que envolve o quiz */
+.quiz-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.quiz-container h3 {
+    color: #1b5e20;
+    margin-bottom: 5px;
+}
+
+/* Estilo do indicador de progresso (Ex: Pergunta 1 de 4) */
+#progresso-quiz {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Estilo do texto da pergunta */
+#pergunta-texto {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+/* Alinhamento dos botões de alternativas */
+#opcoes-resposta {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos botões de alternativas (múltipla escolha) */
+.btn-opcao {
+    background-color: #f5f5f5;
+    color: #333;
+    border: 2px solid #e0e0e0;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    text-align: left; /* Alinha o texto da alternativa para a esquerda */
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Efeito visual ao passar o mouse pelas alternativas */
+.btn-opcao:hover {
+    background-color: #e8f5e9;
+    border-color: #a5d6a7;
+    color: #1b5e20;
+}
+
+/* Botões gerais do quiz (Iniciar / Reiniciar) */
+.btn-quiz {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 15px;
+}
+
+.btn-quiz:hover {
+    background-color: #1b5e20;
+}
+
+/* Caixa visual da Medalha Virtual conquistada */
+.medalha-box {
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 250px;
+    background-color: #fff8e1; /* Fundo levemente dourado */
+    border: 2px dashed #ffb300;
+    border-radius: 8px;
+    animation: popIn 0.5s ease;
+}
+
+.medalha-icone {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.medalha-nome {
+    font-weight: bold;
+    color: #b78103;
+}
+
+/* Animação para a medalha surgir com impacto */
+@keyframes popIn {
+    0% { transform: scale(0.7); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+

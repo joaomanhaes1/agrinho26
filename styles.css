@@ -369,14 +369,14 @@ p {
     padding: 30px;
     background-color: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
 
-.quiz-container h3 {
+.quiz-container h2 {
     color: #1b5e20;
     margin-bottom: 5px;
+    font-family: "Abril Fatface";
 }
 
 /* Estilo do indicador de progresso (Ex: Pergunta 1 de 4) */
@@ -415,13 +415,14 @@ p {
     text-align: left; /* Alinha o texto da alternativa para a esquerda */
     cursor: pointer;
     transition: all 0.2s ease;
+    font-family: "Poppins";
 }
 
 /* Efeito visual ao passar o mouse pelas alternativas */
 .btn-opcao:hover {
     background-color: #e8f5e9;
     border-color: #a5d6a7;
-    color: #1b5e20;
+    color: #586859;
 }
 
 /* Botões gerais do quiz (Iniciar / Reiniciar) */

@@ -26,7 +26,7 @@ header {
     display: flex;
     justify-content: space-between; /* Empurra a logo para a esquerda e o menu para a direita */
     align-items: center;            /* Alinha a logo e os botões verticalmente no meio */
-    padding: 9px 30px;             /* Dá um espaçamento interno nas laterais e cima/baixo 15 30*/
+    padding: 12px 30px;             /* Dá um espaçamento interno nas laterais e cima/baixo 15 30*/
     background-color: #ffffff;      /* Cor de fundo da sua barra (mude se quiser) */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: fixed;   /* Fixa o elemento na tela */
@@ -50,7 +50,7 @@ header {
 }
 
 .logo {
-    height: 35px; /* ajuste o tamanho conforme necessário */
+    height: 50px; /* ajuste o tamanho conforme necessário */
     width: auto;
 }
 

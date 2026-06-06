@@ -157,6 +157,35 @@ function mostrarResultados() {
     containerMedalha.innerHTML = ''; // Limpa medalhas anteriores
     
     // SISTEMA DE GAMIFICAÇÃO: Define o prêmio com base nos acertos
+    let medalhaHTML = '';
+    if (pontuacaoFinal === 4) {
+        medalhaHTML = `
+            <div class="medalha-box">
+                <div class="medalha-icone">🥇</div>
+                <div class="medalha-nome">Guardião Supremo do Solo</div>
+                <p style="font-size:12px; margin:5px 0 0 0; color:#666;">Conhecimento perfeito sobre regeneração agrícola!</p>
+            </div>
+        `;
+    } else if (pontuacaoFinal === 3) {
+        medalhaHTML = `
+            <div class="medalha-box">
+                <div class="medalha-icone">🥈</div>
+                <div class="medalha-nome">Protetor do Carbono</div>
+                <p style="font-size:12px; margin:5px 0 0 0; color:#666;">Excelente desempenho! Você entende os pilares.</p>
+            </div>
+        `;
+    } else {
+        medalhaHTML = `
+            <div class="medalha-box" style="border-color: #90a4ae;">
+                <div class="medalha-icone">🌱</div>
+                <div class="medalha-nome">Aprendiz da Terra</div>
+                <p style="font-size:12px; margin:5px 0 0 0; color:#666;">Bom começo! Continue estudando para salvar o planeta.</p>
+            </div>
+        `;
+    }
+    
+    containerMedalha.innerHTML = medalhaHTML;
+}
 
 // Função para resetar as variáveis e voltar para o início do jogo
 function reiniciarQuiz() {

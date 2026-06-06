@@ -1,17 +1,19 @@
-# Regeneragro!
+# **Regeneragro**!
 
 # 📍 Objetivo
-O objetivo do projeto é estimular o pensamento estratégico sobre como comercializar alimentos de forma consciente e financeira, valorizando a responsabilidade social do agricultor e suas atitudes financeiras.
-# História
-Você é um agricultor que produz diversos produtos como milho, arroz, feijão e trigo com muita qualidade. Ao ver isso, grandes empresas voltam seus olhos para você e lançam propostas para comprar o maior número de produtos de boa
-qualidade para seus consumidores. Agora, você precisa tomar decisões para saber para quem e por quanto vai vender seus produtos.
-# Instruções / Como jogar
-O jogo conta com um estoque de 120 produtos para serem vendidos. Dentre as 5 rodadas presentes, o seu objetivo é conseguir o maior número de dinheiro (faturamento) possível. Para isso, você tem que pensar para perceber qual proposta é a melhor possível. Não
-há problema se o jogar não vender todos os produtos.
+O **RegenerAGRO** tem como objetivo informar sobre a importância da **Agricultura Regenerativa**. O site busca informar de forma clara e objetiva o tema, apresentando as consequências das práticas agrícolas convencionais e os benefícios de se restaurar a biodiversidade e a saúde do solo.
+
+# 🌟 Justificativa
+A agricultura convencional tem enfrentado grandes desafios devido às mudanças climáticas, degradação do solo e escassez de recursos hídricos. Diante desse cenário, a Agricultura Regenerativa surge como uma prática necessária para garantir a segurança alimentar e a saúde do planeta. Assim, este projeto justifica-se pela importância de levar a informação sobre a Agricultura Regenerativa e o conhecimento ecológico de forma fácil para a comunidade, através do site Regeneragro.
+
+# 🚀 Instruções de uso
+Acesse o site a partir do link abaixo e se intere sobre a Agricultura Regenerativa:
+
+# 🛠️ Tecnologias Utilizadas
+• Gemini - geração da identidade visual (logo) e desenvolvimento do quizz
+• Claude - ajuda no desenvolvimento e aplicação de códigos CSS e JavaScript
 
 # Referências
-- Gemini - geração da identidade visual (logo)
-- Claude - ajuda no desenvolvimento e aplicação de códigos CSS e JavaScript
 - https://www.embrapa.br/busca-de-noticias/-/noticia/90285437/artigo---agricultura-regenerativa--o-que-significa-o-que-regenerar 
 - https://clar.agronfy.com.br/5-pilares-da-agricultura-regenerativa/
 - https://croplifebrasil.org/agricultura-regenerativa/

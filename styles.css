@@ -264,3 +264,95 @@ p {
 
 
 /* linhas alternadas pra ficar mais fácil de ler */
+
+
+
+#pilares {
+    padding: 100px 40px;
+    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulo-secao {
+    text-align: center;
+    color: #1b5e20;
+    margin-bottom: 60px;
+}
+
+/* Container que deixa os itens lado a lado */
+.timeline-horizontal {
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Distribui os itens igualmente na tela */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* A grande linha que passa no meio horizontalmente */
+.linha-horizontal {
+    position: absolute;
+    height: 6px;
+    background-color: #2e7d32;
+    width: 100%;
+    top: 20px; /* Alinha a linha exatamente atrás das bolinhas numeradas */
+    left: 0;
+    z-index: 1;
+    border-radius: 3px;
+}
+
+/* Estrutura de cada pilar individual */
+.item-pilar {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza a bolinha e o card */
+    position: relative;
+    z-index: 2; /* Garante que os cards e bolinhas fiquem na frente da linha */
+    flex: 1;    /* Faz com que todos os cards tenham exatamente o mesmo tamanho */
+}
+
+/* As bolinhas numeradas que ficam em cima da linha */
+.bolinha-marcador {
+    width: 40px;
+    height: 40px;
+    background-color: #1b5e20;
+    color: white;
+    border: 4px solid white; /* Cria uma borda para separar a bolinha da linha verde */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* O card com o texto */
+.conteudo-pilar {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito flutuante ao passar o mouse */
+.conteudo-pilar:hover {
+    transform: translateY(-5px);
+}
+
+.conteudo-pilar h3 {
+    color: #2e7d32;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.conteudo-pilar p {
+    color: #555;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}

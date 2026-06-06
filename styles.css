@@ -475,3 +475,9 @@ p {
         gap: 15px;
     }
   }
+
+.footer {
+  background-color: #135017;
+  color: white;
+  font-family: "Poppins";
+}

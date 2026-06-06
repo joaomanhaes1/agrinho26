@@ -444,5 +444,34 @@ p {
 }
 
 /* Caixa visual da Medalha Virtual conquistada */
+ 
+@media (max-width: 768px) {
+    
+    /* 1. Ajustando a Barra do Topo (Header) */
+    header {
+        flex-direction: column; /* Empilha a logo em cima e os botões embaixo */
+        gap: 15px;
+        padding: 10px;
+    }
 
+    .destaque{
+      min-height: 430px;
+    }
 
+    .botoes-top {
+        flex-wrap: wrap;       /* Se os botões não couberem em uma linha, eles quebram para a de baixo */
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .botoes-top .btn-nav {
+        padding: 6px 12px;     /* Diminui um pouco o tamanho dos botões */
+        font-size: 12px;
+    }
+
+    /* 2. Ajustando a seção de Cards (Início/Benefícios) */
+    .grid-projetos {
+        grid-template-columns: 1fr; /* Em vez de 5 colunas, os cards ficam em 1 coluna só (um embaixo do outro) */
+        gap: 15px;
+    }
+  }

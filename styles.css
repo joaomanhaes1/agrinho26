@@ -280,21 +280,23 @@ p {
 /* linhas alternadas pra ficar mais fácil de ler */
 
 /* Estilo da caixinha branca que envelopa a calculadora */
+
+.titulo-calculadora {
+  color: var(--coruniversal);
+  font-family: "Abril Fatface";
+  margin-bottom: 10px;  
+}
+
+
+
 .calculadora-container {
     max-width: 550px;           /* Define a largura máxima para não esticar demais */
     margin: 40px auto;          /* Cria espaço fora da caixa e a centraliza na tela */
     padding: 30px;              /* Espaço interno entre as bordas e os textos */
     background-color: #ffffff;  /* Cor de fundo branca */
     border-radius: 12px;        /* Deixa as pontas da caixa arredondadas */
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08); /* Cria uma sombra suave atrás da caixa */
     text-align: center;         /* Centraliza todos os textos e elementos internos */
     font-family: 'Poppins', sans-serif; /* Aplica a fonte padrão do site */
-}
-
-/* Estilo do título interno (H3) */
-.calculadora-container h3 {
-    color: #1b5e20;             /* Cor verde escura (remetendo ao agro sustentável) */
-    margin-bottom: 10px;        /* Afasta um pouco o título do parágrafo de baixo */
 }
 
 /* Organização do input e do botão em formato de coluna */
@@ -310,7 +312,7 @@ p {
 .formulario-calc input {
     padding: 10px;              /* Deixa o campo mais alto e espaçoso para digitar */
     width: 80%;                 /* Ocupa 80% da largura disponível */
-    max-width: 200px;           /* Mas não passa de 200px (para não ficar gigante) */
+    max-width: 200px;           
     border: 2px solid #ccc;     /* Borda cinza padrão */
     border-radius: 6px;         /* Cantos levemente arredondados */
     font-size: 16px;            /* Tamanho da letra ao digitar */
@@ -319,13 +321,13 @@ p {
 
 /* Estilo do botão de calcular */
 .formulario-calc button {
-    background-color: #2e7d32;  /* Fundo verde médio */
+    background-color: #18641b;  /* Fundo verde médio */
     color: white;               /* Letras brancas */
-    border: none;               /* Remove a borda padrão feia do navegador */
+    border: none;              
     padding: 12px 24px;         /* Espaçamento interno (engrossa o botão) */
     border-radius: 6px;         /* Cantos arredondados */
     font-size: 16px;            /* Tamanho do texto interno */
-    font-weight: 600;           /* Deixa a letra em negrito */
+    font-weight: bold;           /* Deixa a letra em negrito */
     cursor: pointer;            /* Transforma a seta do mouse na mãozinha de clique */
     transition: background 0.2s;/* Deixa a mudança de cor suave ao passar o mouse */
 }
@@ -346,7 +348,7 @@ p {
     animation: fadeIn 0.5s ease;/* Ativa a animação de surgir que criamos abaixo */
 }
 
-/* Configuração da animação "fadeIn" (efeito de surgir subindo de leve) */
+/* Configuração da animação "fadeIn" (efeito de surgir subindo de leve) (Feito por IA) */
 @keyframes fadeIn {
     from { 
         opacity: 0;             /* Começa totalmente invisível */

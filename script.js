@@ -22,14 +22,12 @@ function calcularCarbono() {
     }
 
     // 3. O CÁLCULO MATEMÁTICO
-    // Base científica aproximada: 1 hectare manejado de forma regenerativa absorve cerca de 3.6 toneladas de CO2 por ano.
     var totalCarbono = hectares * 3.6;
     
     // 4. EXIBIÇÃO DO SUCESSO: Como o número deu certo, aplica o design verde de sucesso
     caixaResultado.style.display = 'block';          // Faz a caixa aparecer na tela
     caixaResultado.style.backgroundColor = '#e8f5e9'; // Garante o fundo verde claro
-    caixaResultado.style.borderLeftColor = '#388e3c'; // Garante a barra lateral verde escura
-    
+
     // Injeta o resultado final com HTML customizado dentro da div
     // .toFixed(1): Limita o resultado do carbono para exibir apenas 1 casa decimal (Ex: 18.0 em vez de 18.00000)
     // Math.round(): Arredonda a conta das árvores para um número inteiro sem quebras.

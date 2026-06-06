@@ -1,4 +1,4 @@
-# **Regeneragro**!
+# _RegenerAGRO_!
 
 # 📍 Objetivo
 O **RegenerAGRO** tem como objetivo informar sobre a importância da **Agricultura Regenerativa**. O site busca informar de forma clara e objetiva o tema, apresentando as consequências das práticas agrícolas convencionais e os benefícios de se restaurar a biodiversidade e a saúde do solo.

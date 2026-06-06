@@ -117,16 +117,12 @@ header {
 }
  /* ===================================================================================== */ 
   /* Pilares da Agricultura Regenerativa */ 
-.pilares-titulo h2 {
+.pilares-titulo {
   text-align: center;
   font-family: "Abril Fatface";
   color: var(--coruniversal)
 }
 
-.card h4 {
- font-family: "Abril Fatface";
- color: var(--coruniversal);
-}
 
 
 

@@ -478,6 +478,10 @@ p {
 
 .footer {
   background-color: #135017;
+}
+
+.Rodape {
   color: white;
   font-family: "Poppins";
+  text-align: center;
 }

@@ -373,8 +373,8 @@ p {
     font-family: 'Poppins', sans-serif;
 }
 
-.quiz-container h2 {
-    color: #1b5e20;
+.quiz-container h1 {
+    color: var(--coruniversal);
     margin-bottom: 5px;
     font-family: "Abril Fatface";
 }
@@ -444,30 +444,5 @@ p {
 }
 
 /* Caixa visual da Medalha Virtual conquistada */
-.medalha-box {
-    margin: 20px auto;
-    padding: 15px;
-    max-width: 250px;
-    background-color: #fff8e1; /* Fundo levemente dourado */
-    border: 2px dashed #ffb300;
-    border-radius: 8px;
-    animation: popIn 0.5s ease;
-}
-
-.medalha-icone {
-    font-size: 40px;
-    margin-bottom: 5px;
-}
-
-.medalha-nome {
-    font-weight: bold;
-    color: #b78103;
-}
-
-/* Animação para a medalha surgir com impacto */
-@keyframes popIn {
-    0% { transform: scale(0.7); opacity: 0; }
-    100% { transform: scale(1); opacity: 1; }
-}
 
 

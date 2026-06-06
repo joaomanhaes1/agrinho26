@@ -12,5 +12,7 @@ há problema se o jogar não vender todos os produtos.
 # Referências
 - Gemini - geração da identidade visual (logo)
 - Claude - ajuda no desenvolvimento e aplicação de códigos CSS e JavaScript
-- 
-
+- https://www.embrapa.br/busca-de-noticias/-/noticia/90285437/artigo---agricultura-regenerativa--o-que-significa-o-que-regenerar 
+- https://clar.agronfy.com.br/5-pilares-da-agricultura-regenerativa/
+- https://croplifebrasil.org/agricultura-regenerativa/
+- https://ccarbon.usp.br/pt/agricultura-regenerativa-o-caminho-para-uma-producao-sustentavel/

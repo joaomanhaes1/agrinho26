@@ -1,26 +1,41 @@
-function diagnosticar(tipo) {
-    // Busca a caixinha de resultado no HTML
-    var caixaResultado = document.getElementById('resultado-diagnostico');
+// Função principal chamada pelo clique do botão no HTML
+function calcularCarbono() {
     
-    // Se não encontrar a caixinha, avisa no console do navegador para sabermos o erro
-    if (!caixaResultado) {
-        console.error("Erro: A div id='resultado-diagnostico' não foi encontrada no HTML.");
-        return;
+    // 1. CAPTURA DOS ELEMENTOS: Cria variáveis para puxar as tags do HTML para o JavaScript
+    var campoHectares = document.getElementById('hectares');
+    var caixaResultado = document.getElementById('resultado-calc');
+    
+    // Converte o texto digitado pelo usuário em um número real (com casas decimais se houver)
+    var hectares = parseFloat(campoHectares.value);
+
+    // 2. VALIDAÇÃO DE ERRO: Verifica se o campo está vazio, se não é um número (isNaN) ou se é menor/igual a zero
+    if (isNaN(hectares) || hectares <= 0) {
+        
+        caixaResultado.style.display = 'block';         // Força a caixinha de resultado a aparecer
+        caixaResultado.style.backgroundColor = '#ffebee';// Muda o fundo para vermelho claro (erro)
+        caixaResultado.style.borderLeftColor = '#d32f2f';// Muda a barra lateral para vermelho escuro
+        
+        // Injeta uma mensagem de erro dentro da caixinha
+        caixaResultado.innerHTML = '<h4 style="color: #d32f2f; margin:0;">⚠️ Erro</h4><p style="margin: 5px 0 0 0;">Por favor, digite um número válido de hectares maior que zero.</p>';
+        
+        return; // Interrompe a função aqui mesmo para não fazer o cálculo errado
     }
 
-    if (tipo === 'convencional') {
-        caixaResultado.innerHTML = '<h4>⚠️ Alerta de Desgaste</h4><p>O uso contínuo de químicos e o revolvimento do solo trazem lucro rápido, mas destroem os microrganismos. Com o tempo, a terra precisará de cada vez mais adubo para produzir.</p>';
-        caixaResultado.style.borderLeft = '6px solid #d32f2f';
-        caixaResultado.style.backgroundColor = '#ffebee';
-        
-    } else if (tipo === 'sem-cuidado') {
-        caixaResultado.innerHTML = '<h4>🍂 Risco de Erosão</h4><p>Deixar o solo exposto ao sol e à chuva faz a água evaporar rápido e leva os nutrientes embora. A terra fica fraca, compactada e propensa a rachaduras.</p>';
-        caixaResultado.style.borderLeft = '6px solid #f57c00';
-        caixaResultado.style.backgroundColor = '#fff3e0';
-        
-    } else if (tipo === 'regenerativo') {
-        caixaResultado.innerHTML = '<h4>🌱 Solo Vivo e Forte!</h4><p><strong>Excelente escolha!</strong> Ao usar plantio direto e rotação de culturas, a terra retém mais água, o carbono fica preso no solo alimentando a biodiversidade e a sua produção fica protegida contra secas!</p>';
-        caixaResultado.style.borderLeft = '6px solid #388e3c';
-        caixaResultado.style.backgroundColor = '#e8f5e9';
-    }
+    // 3. O CÁLCULO MATEMÁTICO
+    // Base científica aproximada: 1 hectare manejado de forma regenerativa absorve cerca de 3.6 toneladas de CO2 por ano.
+    var totalCarbono = hectares * 3.6;
+    
+    // 4. EXIBIÇÃO DO SUCESSO: Como o número deu certo, aplica o design verde de sucesso
+    caixaResultado.style.display = 'block';          // Faz a caixa aparecer na tela
+    caixaResultado.style.backgroundColor = '#e8f5e9'; // Garante o fundo verde claro
+    caixaResultado.style.borderLeftColor = '#388e3c'; // Garante a barra lateral verde escura
+    
+    // Injeta o resultado final com HTML customizado dentro da div
+    // .toFixed(1): Limita o resultado do carbono para exibir apenas 1 casa decimal (Ex: 18.0 em vez de 18.00000)
+    // Math.round(): Arredonda a conta das árvores para um número inteiro sem quebras.
+    caixaResultado.innerHTML = `
+        <h4 style="color: #1b5e20; margin-top: 0;">🌱 Resultado Estimado!</h4>
+        <p>Adotando a agricultura regenerativa em <strong>${hectares} hectares</strong>, sua propriedade pode sequestrar cerca de <strong>${totalCarbono.toFixed(1)} toneladas</strong> de CO₂ da atmosfera por ano!</p>
+        <p style="font-size: 13px; color: #555; margin-bottom: 0;">*Isso equivale ao impacto ambiental positivo de plantar aproximadamente ${Math.round(hectares * 25)} novas árvores!</p>
+    `;
 }

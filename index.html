@@ -20,7 +20,7 @@
           <a href="#inicio" class="btn-nav">Início</a>
           <a href="#o-que-e" class="btn-nav">O que é?</a>
           <a href="#pilares" class="btn-nav">Pilares</a>
-          <a href="#projetos" class="btn-nav">Projetos</a>
+          <a href="#simulador" class="btn-nav">Simulador</a>
           <a href="#quizz" class="btn-nav">Quizz</a>
     </nav>
 
@@ -110,21 +110,27 @@
 <br>
 <hr>
 <!-- ===================================  CALCULADORA DE CARBONO   =========================================================================-->
-<div class="simulador-simples">
-    <h3>Escolha um tipo de manejo para testar o solo:</h3>
+<section id="simulador"> 
+
+<div class="calculadora-container">
     
-    <div class="botoes-simulador">
-        <button onclick="diagnosticar('convencional')">Manejo Convencional</button>
-        <button onclick="diagnosticar('sem-cuidado')">Solo Descoberto</button>
-        <button onclick="diagnosticar('regenerativo')">Manejo Regenerativo</button>
+    <h3>Calculadora de Impacto Ambiental</h3>
+    <p>Descubra quantas toneladas de CO₂ sua fazenda pode sequestrar por ano usando práticas regenerativas!</p>
+    
+    <div class="formulario-calc">
+        <label for="hectares">Tamanho da propriedade (em Hectares):</label>
+        
+        <input type="number" id="hectares" placeholder="Ex: 50" min="1">
+        
+        <button onclick="calcularCarbono()">Calcular Impacto</button>
     </div>
 
-    <div id="resultado-diagnostico" class="resultado-box">
-        <p>Clique em um dos botões acima para ver o diagnóstico da terra.</p>
-    </div>
+    <div id="resultado-calc" class="resultado-calc-box" style="display: none;">
+        </div>
+    
 </div>
 
-
+</section>
 
 
 

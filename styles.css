@@ -279,38 +279,81 @@ p {
 
 /* linhas alternadas pra ficar mais fácil de ler */
 
-
-.simulador-simples {
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: 'Poppins', sans-serif;
+/* Estilo da caixinha branca que envelopa a calculadora */
+.calculadora-container {
+    max-width: 550px;           /* Define a largura máxima para não esticar demais */
+    margin: 40px auto;          /* Cria espaço fora da caixa e a centraliza na tela */
+    padding: 30px;              /* Espaço interno entre as bordas e os textos */
+    background-color: #ffffff;  /* Cor de fundo branca */
+    border-radius: 12px;        /* Deixa as pontas da caixa arredondadas */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08); /* Cria uma sombra suave atrás da caixa */
+    text-align: center;         /* Centraliza todos os textos e elementos internos */
+    font-family: 'Poppins', sans-serif; /* Aplica a fonte padrão do site */
 }
 
-.botoes-simulador button {
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    margin: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: background 0.2s;
+/* Estilo do título interno (H3) */
+.calculadora-container h3 {
+    color: #1b5e20;             /* Cor verde escura (remetendo ao agro sustentável) */
+    margin-bottom: 10px;        /* Afasta um pouco o título do parágrafo de baixo */
 }
 
-.botoes-simulador button:hover {
-    background-color: #388e3c;
+/* Organização do input e do botão em formato de coluna */
+.formulario-calc {
+    margin: 25px 0;             /* Espaçamento em cima e embaixo do formulário */
+    display: flex;              /* Ativa o modo Flexbox para alinhar itens */
+    flex-direction: column;     /* Empilha os elementos um em cima do outro */
+    align-items: center;        /* Centraliza os elementos horizontalmente */
+    gap: 12px;                  /* Cria uma distância padrão de 12px entre cada item */
 }
 
-.resultado-box {
-    margin-top: 30px;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #eee;
-    border-left: 6px solid #ccc;
-    font-size: 16px;
-    line-height: 1.6;
-    transition: all 0.3s ease;
+/* Estilo do campo de texto (onde digita o número) */
+.formulario-calc input {
+    padding: 10px;              /* Deixa o campo mais alto e espaçoso para digitar */
+    width: 80%;                 /* Ocupa 80% da largura disponível */
+    max-width: 200px;           /* Mas não passa de 200px (para não ficar gigante) */
+    border: 2px solid #ccc;     /* Borda cinza padrão */
+    border-radius: 6px;         /* Cantos levemente arredondados */
+    font-size: 16px;            /* Tamanho da letra ao digitar */
+    text-align: center;         /* Centraliza o número digitado dentro do campo */
+}
+
+/* Estilo do botão de calcular */
+.formulario-calc button {
+    background-color: #2e7d32;  /* Fundo verde médio */
+    color: white;               /* Letras brancas */
+    border: none;               /* Remove a borda padrão feia do navegador */
+    padding: 12px 24px;         /* Espaçamento interno (engrossa o botão) */
+    border-radius: 6px;         /* Cantos arredondados */
+    font-size: 16px;            /* Tamanho do texto interno */
+    font-weight: 600;           /* Deixa a letra em negrito */
+    cursor: pointer;            /* Transforma a seta do mouse na mãozinha de clique */
+    transition: background 0.2s;/* Deixa a mudança de cor suave ao passar o mouse */
+}
+
+/* Efeito visual quando o mouse passa por cima do botão */
+.formulario-calc button:hover {
+    background-color: #1b5e20;  /* Escurece o verde do botão */
+}
+
+/* Estilo da caixa de resultado (que começa oculta) */
+.resultado-calc-box {
+    margin-top: 20px;           /* Afasta a caixa do botão de cima */
+    padding: 20px;              /* Espaço interno para o texto não colar nas bordas */
+    background-color: #e8f5e9;  /* Fundo verde bem claro (sucesso) */
+    border-left: 6px solid #388e3c; /* Cria uma barra vertical verde escura no lado esquerdo */
+    border-radius: 6px;         /* Arredonda os cantos */
+    text-align: left;           /* Alinha o texto do resultado para a esquerda */
+    animation: fadeIn 0.5s ease;/* Ativa a animação de surgir que criamos abaixo */
+}
+
+/* Configuração da animação "fadeIn" (efeito de surgir subindo de leve) */
+@keyframes fadeIn {
+    from { 
+        opacity: 0;             /* Começa totalmente invisível */
+        transform: translateY(10px); /* Começa 10 pixels mais para baixo */
+    }
+    to { 
+        opacity: 1;             /* Termina totalmente visível */
+        transform: translateY(0);    /* Termina na posição original */
+    }
 }

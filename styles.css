@@ -123,7 +123,7 @@ header {
   color: var(--coruniversal)
 }
 
-.card h4 {
+.card h3 {
  font-family: "Abril Fatface";
  color: var(--coruniversal);
 }
@@ -173,14 +173,7 @@ header {
   place-items: center;
 }
 
-.projeto3 {
-  font-size: 20px;
-  font-weight: normal;
-}
 
-.projeto33 {
-  font-family: "Abril Fatface", sans-serif;
-}
 
 
 

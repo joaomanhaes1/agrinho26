@@ -480,8 +480,14 @@ p {
   background-color: #135017;
 }
 
-.Rodape {
-  color: white;
-  font-family: "Poppins";
-  text-align: center;
+.rodape {    /* Configurações do rodapé da página */
+    background-color: #2e7d32; 
+    color: white;           
+    font-family: 'Poppins', sans-serif; 
+    text-align: center;         
+    padding: 15px 0;           
+    font-size: 14px;           
+    font-weight: 500;          
+    width: 100%;               
+    margin-top: 40px;          
 }

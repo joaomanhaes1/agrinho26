@@ -10,6 +10,19 @@ html {
     scroll-behavior: smooth;  /* rolagem suave -- por Gemini */
 }
 
+html, body {  /* Garantia de q o body vai ocupar 100% da tela */
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main, .conteudo-principal {
+    flex: 1; /* Empurra o rodapé pro final */
+}
 
 /* definição de variáveis */
 :root {

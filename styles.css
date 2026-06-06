@@ -342,7 +342,6 @@ p {
     margin-top: 20px;           /* Afasta a caixa do botão de cima */
     padding: 20px;              /* Espaço interno para o texto não colar nas bordas */
     background-color: #e8f5e9;  /* Fundo verde bem claro (sucesso) */
-    border-left: 6px solid #388e3c; /* Cria uma barra vertical verde escura no lado esquerdo */
     border-radius: 6px;         /* Arredonda os cantos */
     text-align: left;           /* Alinha o texto do resultado para a esquerda */
     animation: fadeIn 0.5s ease;/* Ativa a animação de surgir que criamos abaixo */

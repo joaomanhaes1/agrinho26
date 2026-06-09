@@ -11,6 +11,7 @@ Acesse o site a partir do link abaixo e se intere sobre a Agricultura Regenerati
 
 # 🛠️ Tecnologias Utilizadas
 • Gemini - geração da identidade visual (logo) e desenvolvimento do quizz
+
 • Claude - ajuda no desenvolvimento e aplicação de códigos CSS e JavaScript
 
 # Referências

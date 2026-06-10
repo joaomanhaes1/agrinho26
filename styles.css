@@ -24,6 +24,10 @@ main, .conteudo-principal {
     flex: 1; /* Empurra o rodapé pro final */
 }
 
+.esq1 {
+    background-image: url(midias/esquema1.png);
+}
+
 /* definição de variáveis */
 :root {
   --radius: 16px;

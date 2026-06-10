@@ -4,10 +4,11 @@
 O **RegenerAGRO** tem como objetivo informar sobre a importância da **Agricultura Regenerativa**. O site busca informar de forma clara e objetiva o tema, apresentando as consequências das práticas agrícolas convencionais e os benefícios de se restaurar a biodiversidade e a saúde do solo.
 
 # 🌟 Justificativa
-A agricultura convencional tem enfrentado grandes desafios devido às mudanças climáticas, degradação do solo e escassez de recursos hídricos. Diante desse cenário, a Agricultura Regenerativa surge como uma prática necessária para garantir a segurança alimentar e a saúde do planeta. Assim, este projeto justifica-se pela importância de levar a informação sobre a Agricultura Regenerativa e o conhecimento ecológico de forma fácil para a comunidade, através do site Regeneragro.
+A agricultura convencional tem enfrentado grandes desafios devido às mudanças climáticas, degradação do solo e escassez de recursos hídricos. Diante desse cenário, a Agricultura Regenerativa surge como uma prática necessária para garantir a segurança alimentar e a saúde do planeta. Assim, o site tem como justificativa a importância de informar sobre a Agricultura Regenerativa e o conhecimento ecológico de forma fácil para a sociedade, através do site Regeneragro.
 
 # 🚀 Instruções de uso
 Acesse o site a partir do link abaixo e se intere sobre a Agricultura Regenerativa:
+https://joaomanhaes1.github.io/agrinho26/
 
 # 🛠️ Tecnologias Utilizadas
 • Gemini - geração da identidade visual (logo) e desenvolvimento do quizz

@@ -486,9 +486,9 @@ p {
         font-size: 12px;
     }
 
-    /* 2. Ajustando a seção de Cards (Início/Benefícios) */
+    /* A(Início/Benefícios) */
     .grid-projetos {
-        grid-template-columns: 1fr; /* Em vez de 5 colunas, os cards ficam em 1 coluna só (um embaixo do outro) */
+        grid-template-columns: 1fr; 
         gap: 15px;
     }
   }
@@ -507,4 +507,68 @@ p {
     font-weight: 500;          
     width: 100%;               
     margin-top: 40px;          
+}
+
+/* 1. Estilizando a sua nova classe para ficar igual aos outros botões */
+.btn-modo-nav {
+    background-color: #369b3b; 
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    transition: background 0.3s ease;
+}
+
+.btn-modo-nav:hover {
+    background-color: #135017;
+}
+
+/* 2. A mágica do Modo Escuro: muda as cores de tudo quando o checkbox está marcado */
+body:has(#tema-toggle:checked) {
+    background-color: #121212;
+    color: #e0e0e0;
+    --texto: #e0e0e0;
+}
+
+/* Deixa o fundo das caixas e do cabeçalho cinza escuro */
+body:has(#tema-toggle:checked) header,
+body:has(#tema-toggle:checked) .card,
+body:has(#tema-toggle:checked) .calculadora-container,
+body:has(#tema-toggle:checked) .quiz-container {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border-bottom: 1px solid #333;
+}
+
+/* Ajusta a cor dos títulos verdes para um tom mais suave (não doer o olho no escuro) */
+body:has(#tema-toggle:checked) .card h2,
+body:has(#tema-toggle:checked) .card h3,
+body:has(#tema-toggle:checked) .card p,
+body:has(#tema-toggle:checked) .nome-site {
+    color: #a5d6a7; 
+}
+
+/* Arruma a cor dos textos principais */
+body:has(#tema-toggle:checked) .o-que-eh3,
+body:has(#tema-toggle:checked) #pergunta-texto {
+    color: #e0e0e0;
+}
+
+/* Arruma os botões do Quizz */
+body:has(#tema-toggle:checked) .btn-opcao {
+    background-color: #333;
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+/* Opcional: Escurece o próprio botão "Claro/Escuro" quando ativado */
+body:has(#tema-toggle:checked) .btn-modo-nav {
+    background-color: #444; 
+}
+
+body:has(#tema-toggle:checked) .btn-modo-nav:hover {
+    background-color: #222;
 }
